@@ -1,0 +1,308 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@400;600&family=Nunito+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Mono:ital,wght@0,400;0,600;1,400;1,600&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="../../res/bento.css">
+  <link rel="stylesheet" href="../../res/site.css">
+  <link rel="stylesheet" href="../../res/tree.css">
+  <link rel="stylesheet" href="../../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Running Programs</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../../img/jfyplus.png" width="120" height="34" /></div>
+        <div><p>JFY+ Online Help</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+  <ul>
+    <li><button class="tree blank"></button><a href="../../index.html">Welcome to JFY+</a></li>
+    <li><button class="tree blank"></button><a href="../../index2.html">Your one stop shop for sheet metal processing</a></li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../../introduction/index.html">Introduction</a>
+      <ul class="hide">
+        <li>
+          <button class="tree closed"></button>
+          <a href="../../introduction/installation/index.html">Installation</a>
+          <ul class="hide">
+            <li><button class="tree blank"></button><a href="../../introduction/installation/prerequisites.html">Prerequisites</a></li>
+            <li><button class="tree blank"></button><a href="../../introduction/installation/jfy+ setup installation.html">JFY+ Setup Installation</a></li>
+            <li><button class="tree blank"></button><a href="../../introduction/installation/server installation.html">Server Installation</a></li>
+            <li><button class="tree blank"></button><a href="../../introduction/installation/client installation.html">Client Installation</a></li>
+          </ul>
+        </li>
+        <li><button class="tree blank"></button><a href="../../introduction/basic workflow.html">Basic Workflow</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../../part library/index.html">Part Library</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../../part library/cad file types.html">CAD File Types</a></li>
+        <li><button class="tree blank"></button><a href="../../part library/part library tour.html">Part Library Tour</a></li>
+        <li><button class="tree blank"></button><a href="../../part library/import parts.html">Import Parts</a></li>
+        <li><button class="tree blank"></button><a href="../../part library/tooling status.html">Tooling Status</a></li>
+        <li>
+          <button class="tree closed"></button>
+          <a href="../../part library/validate cad error/index.html">Validate CAD Error</a>
+          <ul class="hide">
+            <li><button class="tree blank"></button><a href="../../part library/validate cad error/material missing.html">Material Missing</a></li>
+            <li><button class="tree blank"></button><a href="../../part library/validate cad error/material not assigned.html">Material Not Assigned</a></li>
+            <li><button class="tree blank"></button><a href="../../part library/validate cad error/bend and cut infeasible.html">Bend and Cut Infeasible</a></li>
+          </ul>
+        </li>
+        <li><button class="tree blank"></button><a href="../../part library/edit update tooling.html">Edit/Update Tooling</a></li>
+        <li><button class="tree blank"></button><a href="../../part library/output setting.html">Output Setting</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../../assembly/index.html">Assembly</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../../assembly/create nests from assembly.html">Create Nests from Assembly</a></li>
+        <li><button class="tree blank"></button><a href="../../assembly/import non-sheet metal parts.html">Import Non-Sheet metal Parts</a></li>
+        <li><button class="tree blank"></button><a href="../../assembly/producing assembly.html">Producing Assembly</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../../job/index.html">Job</a>
+      <ul class="hide">
+        <li>
+          <button class="tree closed"></button>
+          <a href="../../job/planning jobs/index.html">Planning Jobs</a>
+          <ul class="hide">
+            <li><button class="tree blank"></button><a href="../../job/planning jobs/mixed nesting workflow.html">Mixed Nesting Workflow</a></li>
+            <li><button class="tree blank"></button><a href="../../job/planning jobs/interactive nesting.html">Interactive Nesting</a></li>
+            <li><button class="tree blank"></button><a href="../../job/planning jobs/pull workflow.html">Pull Workflow</a></li>
+          </ul>
+        </li>
+        <li><button class="tree blank"></button><a href="../../job/remnant sheets.html">Remnant Sheets</a></li>
+        <li><button class="tree blank"></button><a href="../../job/auto release job.html">Auto Release Job</a></li>
+        <li><button class="tree blank"></button><a href="../../job/job workflow.html">Job Workflow</a></li>
+        <li><button class="tree blank"></button><a href="../../job/twinline nesting.html">Twinline Nesting</a></li>
+        <li><button class="tree blank"></button><a href="../../job/layout commands.html">Layout Commands</a></li>
+        <li><button class="tree blank"></button><a href="../../job/layout reports.html">Layout Reports</a></li>
+        <li><button class="tree blank"></button><a href="../../job/nest output settings.html">Nest Output Settings</a></li>
+        <li><button class="tree blank"></button><a href="../../job/out of date layout.html">Out of Date Layout</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../../job spreadsheet/index.html">Job Spreadsheet</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../../job spreadsheet/cad lookup.html">CAD Lookup</a></li>
+        <li><button class="tree blank"></button><a href="../../job spreadsheet/map un-map.html">Map Un-map</a></li>
+        <li><button class="tree blank"></button><a href="../../job spreadsheet/missing part.html">Missing part</a></li>
+        <li><button class="tree blank"></button><a href="../../job spreadsheet/recursive cad search.html">Recursive CAD Search</a></li>
+        <li><button class="tree blank"></button><a href="../../job spreadsheet/spreadsheet live folder.html">Spreadsheet Live Folder</a></li>
+        <li><button class="tree blank"></button><a href="../../job spreadsheet/spreadsheet mapping error.html">Spreadsheet Mapping Error</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../../factory settings/index.html">Factory Settings</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../../factory settings/add remove machine.html">Add Remove Machine</a></li>
+        <li><button class="tree blank"></button><a href="../../factory settings/add new material.html">Add New Material</a></li>
+        <li><button class="tree blank"></button><a href="../../factory settings/delete material.html">Delete Material</a></li>
+        <li><button class="tree blank"></button><a href="../../factory settings/material mapping.html">Material Mapping</a></li>
+        <li><button class="tree blank"></button><a href="../../factory settings/edit factory material.html">Edit Factory Material</a></li>
+        <li><button class="tree blank"></button><a href="../../factory settings/update metacam laser database.html">Update MetaCAM Laser Database</a></li>
+        <li><button class="tree blank"></button><a href="../../factory settings/normalize flat along the part-width.html">Normalize Flat along the part Width</a></li>
+        <li><button class="tree blank"></button><a href="../../factory settings/fudge shape identification.html">Fudge Shape Identification</a></li>
+        <li><button class="tree blank"></button><a href="../../factory settings/email notification.html">Email Notification</a></li>
+        <li><button class="tree blank"></button><a href="../../factory settings/nest settings.html">Nest Settings</a></li>
+        <li><button class="tree blank"></button><a href="../../factory settings/analytics.html">Analytics</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../../filters/index.html">Filters</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../../filters/dropdown command bar.html">Drop down Command Bar</a></li>
+        <li><button class="tree blank"></button><a href="../../filters/part library filter.html">Part Library Filter</a></li>
+        <li><button class="tree blank"></button><a href="../../filters/save filter.html">Save Filter</a></li>
+        <li><button class="tree blank"></button><a href="../../filters/job page filter.html">Job Page Filter</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../../cad extensions/index.html">CAD Extensions</a>
+      <ul class="hide">
+        <li>
+          <button class="tree closed"></button>
+          <a href="../../cad extensions/creo family parts/index.html">Creo Family Parts</a>
+          <ul class="hide">
+            <li><button class="tree blank"></button><a href="../../cad extensions/creo family parts/commands supported.html">Commands Supported</a></li>
+            <li><button class="tree blank"></button><a href="../../cad extensions/creo family parts/emulation mode.html">Emulation Mode</a></li>
+          </ul>
+        </li>
+        <li>
+          <button class="tree closed"></button>
+          <a href="../../cad extensions/solidworks addin/index.html">SolidWorks Addin</a>
+          <ul class="hide">
+            <li><button class="tree blank"></button><a href="../../cad extensions/solidworks addin/saving sw part to jfy+.html">Saving SW Part to JFY+</a></li>
+            <li><button class="tree blank"></button><a href="../../cad extensions/solidworks addin/saving assembly parts.html">Saving SW Assembly Parts</a></li>
+            <li><button class="tree blank"></button><a href="../../cad extensions/solidworks addin/save configuration.html">Save Configuration</a></li>
+            <li><button class="tree blank"></button><a href="../../cad extensions/solidworks addin/part feasibility check.html">Part Feasibility Check</a></li>
+            <li><button class="tree blank"></button><a href="../../cad extensions/solidworks addin/thickness fudge or tolerance.html">Thickness Fudge or Tolerance</a></li>
+            <li><button class="tree blank"></button><a href="../../cad extensions/solidworks addin/factory settings.html">Factory Settings</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree open"></button>
+      <a href="../index.html">HMI Controls</a>
+      <ul>
+        <li>
+          <button class="tree open"></button>
+          <a href="index.html">Right Angle Link</a>
+          <ul>
+            <li><button class="tree blank"></button><a href="loading programs into right angle.html">Loading Programs into RightAngle</a></li>
+            <li><button class="tree blank"></button><a href="searching programs.html">Searching Programs</a></li>
+            <li><button class="tree blank"></button><a class="active" href="running programs.html">Running Programs</a></li>
+            <li><button class="tree blank"></button><a href="editing programs.html">Editing Programs</a></li>
+            <li><button class="tree blank"></button><a href="adding multiple ra stations.html">Adding Multiple RA Stations</a></li>
+            <li><button class="tree blank"></button><a href="tools and settings synchronization.html">Tools and Settings synchronization</a></li>
+          </ul>
+        </li>
+        <li>
+          <button class="tree closed"></button>
+          <a href="../vulcan link/index.html">Vulcan Link</a>
+          <ul class="hide">
+            <li><button class="tree blank"></button><a href="../vulcan link/loading programs into vulcan.html">Loading Programs into Vulcan</a></li>
+            <li><button class="tree blank"></button><a href="../vulcan link/running programs.html">Running Programs</a></li>
+            <li><button class="tree blank"></button><a href="../vulcan link/editing programs.html">Editing Programs</a></li>
+            <li><button class="tree blank"></button><a href="../vulcan link/ltt synchronization.html">LTT Synchronization</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../../misc tools/index.html">Misc Tools</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../../misc tools/auto tooling.html">Auto Tooling</a></li>
+        <li><button class="tree blank"></button><a href="../../misc tools/jupidu bend post.html">Jupidu Bend Post</a></li>
+        <li>
+          <button class="tree closed"></button>
+          <a href="../../misc tools/forms/index.html">Forms</a>
+          <ul class="hide">
+            <li><button class="tree blank"></button><a href="../../misc tools/forms/indexing.html">Indexing</a></li>
+            <li><button class="tree blank"></button><a href="../../misc tools/forms/forming preview.html">Forming Preview</a></li>
+          </ul>
+        </li>
+        <li>
+          <button class="tree closed"></button>
+          <a href="../../misc tools/bus bar machine support/index.html">Bus Bar Machine Support</a>
+          <ul class="hide">
+            <li><button class="tree blank"></button><a href="../../misc tools/bus bar machine support/cut finisher for ehrt machines.html">Cut Finisher for EHRT Machines</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+  <div>
+    <button>
+      <img src="../../res/home.png">
+    </button>
+  </div>
+  <div>
+    <a href="../index.html">HMI Controls</a>
+  </div>
+  <div>/</div>
+  <div>
+    <a href="index.html">Right Angle Link</a>
+  </div>
+  <div>/</div>
+  <div>
+    <a href="running programs.html">Running Programs</a>
+  </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Running Programs</h1>
+<div class="paragraph">
+<p>Select a program and use the run command to load the program for running.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/running-program.png" alt="Run Program">
+</div>
+</div>
+<div class="paragraph">
+<p>JFY+ Job and Part statuses are updated to reflect the parts-in-progress.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/bending-queue-ra.png" alt="Processing Job">
+</div>
+</div>
+<div class="paragraph">
+<p>Press the <b class="button">done</b> button on the run page (depending on your screen height, you may have to press <strong>more</strong> to bring this in). The job is updated with the completion status and the program is removed from the machine production queue.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/done.png" alt="Done">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/done2.png" alt="Done">
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc"></aside>
+                </div>
+            </div>
+            <nav class="pagination">
+  <span class="prev"><a href="searching programs.html">Searching Programs</a></span>
+  <span class="next"><a href="editing programs.html">Editing Programs</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2025 by Jiangsu Jinfangyuan CNC Machine Co.. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../../res/index.js"></script>
+    <script src="../../res/files.js"></script>
+    <script src="../../res/site.js"></script>
+
+    
+</body>
+</html>

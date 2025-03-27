@@ -1,0 +1,550 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@400;600&family=Nunito+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Mono:ital,wght@0,400;0,600;1,400;1,600&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="../res/bento.css">
+  <link rel="stylesheet" href="../res/site.css">
+  <link rel="stylesheet" href="../res/tree.css">
+  <link rel="stylesheet" href="../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Edit Factory Material</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../img/jfyplus.png" width="120" height="34" /></div>
+        <div><p>JFY+ Online Help</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+  <ul>
+    <li><button class="tree blank"></button><a href="../index.html">Welcome to JFY+</a></li>
+    <li><button class="tree blank"></button><a href="../index2.html">Your one stop shop for sheet metal processing</a></li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../introduction/index.html">Introduction</a>
+      <ul class="hide">
+        <li>
+          <button class="tree closed"></button>
+          <a href="../introduction/installation/index.html">Installation</a>
+          <ul class="hide">
+            <li><button class="tree blank"></button><a href="../introduction/installation/prerequisites.html">Prerequisites</a></li>
+            <li><button class="tree blank"></button><a href="../introduction/installation/jfy+ setup installation.html">JFY+ Setup Installation</a></li>
+            <li><button class="tree blank"></button><a href="../introduction/installation/server installation.html">Server Installation</a></li>
+            <li><button class="tree blank"></button><a href="../introduction/installation/client installation.html">Client Installation</a></li>
+          </ul>
+        </li>
+        <li><button class="tree blank"></button><a href="../introduction/basic workflow.html">Basic Workflow</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../part library/index.html">Part Library</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../part library/cad file types.html">CAD File Types</a></li>
+        <li><button class="tree blank"></button><a href="../part library/part library tour.html">Part Library Tour</a></li>
+        <li><button class="tree blank"></button><a href="../part library/import parts.html">Import Parts</a></li>
+        <li><button class="tree blank"></button><a href="../part library/tooling status.html">Tooling Status</a></li>
+        <li>
+          <button class="tree closed"></button>
+          <a href="../part library/validate cad error/index.html">Validate CAD Error</a>
+          <ul class="hide">
+            <li><button class="tree blank"></button><a href="../part library/validate cad error/material missing.html">Material Missing</a></li>
+            <li><button class="tree blank"></button><a href="../part library/validate cad error/material not assigned.html">Material Not Assigned</a></li>
+            <li><button class="tree blank"></button><a href="../part library/validate cad error/bend and cut infeasible.html">Bend and Cut Infeasible</a></li>
+          </ul>
+        </li>
+        <li><button class="tree blank"></button><a href="../part library/edit update tooling.html">Edit/Update Tooling</a></li>
+        <li><button class="tree blank"></button><a href="../part library/output setting.html">Output Setting</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../assembly/index.html">Assembly</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../assembly/create nests from assembly.html">Create Nests from Assembly</a></li>
+        <li><button class="tree blank"></button><a href="../assembly/import non-sheet metal parts.html">Import Non-Sheet metal Parts</a></li>
+        <li><button class="tree blank"></button><a href="../assembly/producing assembly.html">Producing Assembly</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../job/index.html">Job</a>
+      <ul class="hide">
+        <li>
+          <button class="tree closed"></button>
+          <a href="../job/planning jobs/index.html">Planning Jobs</a>
+          <ul class="hide">
+            <li><button class="tree blank"></button><a href="../job/planning jobs/mixed nesting workflow.html">Mixed Nesting Workflow</a></li>
+            <li><button class="tree blank"></button><a href="../job/planning jobs/interactive nesting.html">Interactive Nesting</a></li>
+            <li><button class="tree blank"></button><a href="../job/planning jobs/pull workflow.html">Pull Workflow</a></li>
+          </ul>
+        </li>
+        <li><button class="tree blank"></button><a href="../job/remnant sheets.html">Remnant Sheets</a></li>
+        <li><button class="tree blank"></button><a href="../job/auto release job.html">Auto Release Job</a></li>
+        <li><button class="tree blank"></button><a href="../job/job workflow.html">Job Workflow</a></li>
+        <li><button class="tree blank"></button><a href="../job/twinline nesting.html">Twinline Nesting</a></li>
+        <li><button class="tree blank"></button><a href="../job/layout commands.html">Layout Commands</a></li>
+        <li><button class="tree blank"></button><a href="../job/layout reports.html">Layout Reports</a></li>
+        <li><button class="tree blank"></button><a href="../job/nest output settings.html">Nest Output Settings</a></li>
+        <li><button class="tree blank"></button><a href="../job/out of date layout.html">Out of Date Layout</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../job spreadsheet/index.html">Job Spreadsheet</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../job spreadsheet/cad lookup.html">CAD Lookup</a></li>
+        <li><button class="tree blank"></button><a href="../job spreadsheet/map un-map.html">Map Un-map</a></li>
+        <li><button class="tree blank"></button><a href="../job spreadsheet/missing part.html">Missing part</a></li>
+        <li><button class="tree blank"></button><a href="../job spreadsheet/recursive cad search.html">Recursive CAD Search</a></li>
+        <li><button class="tree blank"></button><a href="../job spreadsheet/spreadsheet live folder.html">Spreadsheet Live Folder</a></li>
+        <li><button class="tree blank"></button><a href="../job spreadsheet/spreadsheet mapping error.html">Spreadsheet Mapping Error</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree open"></button>
+      <a href="index.html">Factory Settings</a>
+      <ul>
+        <li><button class="tree blank"></button><a href="add remove machine.html">Add Remove Machine</a></li>
+        <li><button class="tree blank"></button><a href="add new material.html">Add New Material</a></li>
+        <li><button class="tree blank"></button><a href="delete material.html">Delete Material</a></li>
+        <li><button class="tree blank"></button><a href="material mapping.html">Material Mapping</a></li>
+        <li><button class="tree blank"></button><a class="active" href="edit factory material.html">Edit Factory Material</a></li>
+        <li><button class="tree blank"></button><a href="update metacam laser database.html">Update MetaCAM Laser Database</a></li>
+        <li><button class="tree blank"></button><a href="normalize flat along the part-width.html">Normalize Flat along the part Width</a></li>
+        <li><button class="tree blank"></button><a href="fudge shape identification.html">Fudge Shape Identification</a></li>
+        <li><button class="tree blank"></button><a href="email notification.html">Email Notification</a></li>
+        <li><button class="tree blank"></button><a href="nest settings.html">Nest Settings</a></li>
+        <li><button class="tree blank"></button><a href="analytics.html">Analytics</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../filters/index.html">Filters</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../filters/dropdown command bar.html">Drop down Command Bar</a></li>
+        <li><button class="tree blank"></button><a href="../filters/part library filter.html">Part Library Filter</a></li>
+        <li><button class="tree blank"></button><a href="../filters/save filter.html">Save Filter</a></li>
+        <li><button class="tree blank"></button><a href="../filters/job page filter.html">Job Page Filter</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../cad extensions/index.html">CAD Extensions</a>
+      <ul class="hide">
+        <li>
+          <button class="tree closed"></button>
+          <a href="../cad extensions/creo family parts/index.html">Creo Family Parts</a>
+          <ul class="hide">
+            <li><button class="tree blank"></button><a href="../cad extensions/creo family parts/commands supported.html">Commands Supported</a></li>
+            <li><button class="tree blank"></button><a href="../cad extensions/creo family parts/emulation mode.html">Emulation Mode</a></li>
+          </ul>
+        </li>
+        <li>
+          <button class="tree closed"></button>
+          <a href="../cad extensions/solidworks addin/index.html">SolidWorks Addin</a>
+          <ul class="hide">
+            <li><button class="tree blank"></button><a href="../cad extensions/solidworks addin/saving sw part to jfy+.html">Saving SW Part to JFY+</a></li>
+            <li><button class="tree blank"></button><a href="../cad extensions/solidworks addin/saving assembly parts.html">Saving SW Assembly Parts</a></li>
+            <li><button class="tree blank"></button><a href="../cad extensions/solidworks addin/save configuration.html">Save Configuration</a></li>
+            <li><button class="tree blank"></button><a href="../cad extensions/solidworks addin/part feasibility check.html">Part Feasibility Check</a></li>
+            <li><button class="tree blank"></button><a href="../cad extensions/solidworks addin/thickness fudge or tolerance.html">Thickness Fudge or Tolerance</a></li>
+            <li><button class="tree blank"></button><a href="../cad extensions/solidworks addin/factory settings.html">Factory Settings</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../hmi controls/index.html">HMI Controls</a>
+      <ul class="hide">
+        <li>
+          <button class="tree closed"></button>
+          <a href="../hmi controls/right angle link/index.html">Right Angle Link</a>
+          <ul class="hide">
+            <li><button class="tree blank"></button><a href="../hmi controls/right angle link/loading programs into right angle.html">Loading Programs into RightAngle</a></li>
+            <li><button class="tree blank"></button><a href="../hmi controls/right angle link/searching programs.html">Searching Programs</a></li>
+            <li><button class="tree blank"></button><a href="../hmi controls/right angle link/running programs.html">Running Programs</a></li>
+            <li><button class="tree blank"></button><a href="../hmi controls/right angle link/editing programs.html">Editing Programs</a></li>
+            <li><button class="tree blank"></button><a href="../hmi controls/right angle link/adding multiple ra stations.html">Adding Multiple RA Stations</a></li>
+            <li><button class="tree blank"></button><a href="../hmi controls/right angle link/tools and settings synchronization.html">Tools and Settings synchronization</a></li>
+          </ul>
+        </li>
+        <li>
+          <button class="tree closed"></button>
+          <a href="../hmi controls/vulcan link/index.html">Vulcan Link</a>
+          <ul class="hide">
+            <li><button class="tree blank"></button><a href="../hmi controls/vulcan link/loading programs into vulcan.html">Loading Programs into Vulcan</a></li>
+            <li><button class="tree blank"></button><a href="../hmi controls/vulcan link/running programs.html">Running Programs</a></li>
+            <li><button class="tree blank"></button><a href="../hmi controls/vulcan link/editing programs.html">Editing Programs</a></li>
+            <li><button class="tree blank"></button><a href="../hmi controls/vulcan link/ltt synchronization.html">LTT Synchronization</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../misc tools/index.html">Misc Tools</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../misc tools/auto tooling.html">Auto Tooling</a></li>
+        <li><button class="tree blank"></button><a href="../misc tools/jupidu bend post.html">Jupidu Bend Post</a></li>
+        <li>
+          <button class="tree closed"></button>
+          <a href="../misc tools/forms/index.html">Forms</a>
+          <ul class="hide">
+            <li><button class="tree blank"></button><a href="../misc tools/forms/indexing.html">Indexing</a></li>
+            <li><button class="tree blank"></button><a href="../misc tools/forms/forming preview.html">Forming Preview</a></li>
+          </ul>
+        </li>
+        <li>
+          <button class="tree closed"></button>
+          <a href="../misc tools/bus bar machine support/index.html">Bus Bar Machine Support</a>
+          <ul class="hide">
+            <li><button class="tree blank"></button><a href="../misc tools/bus bar machine support/cut finisher for ehrt machines.html">Cut Finisher for EHRT Machines</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+  <div>
+    <button>
+      <img src="../res/home.png">
+    </button>
+  </div>
+  <div>
+    <a href="index.html">Factory Settings</a>
+  </div>
+  <div>/</div>
+  <div>
+    <a href="edit factory material.html">Edit Factory Material</a>
+  </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Edit Factory Material</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Similar to the CAM page mapping, you can edit material aliases and bend materials (materials used in Flux Bend). The material editor dialog can be viewed using the command <strong>factory &#8594; sheets &#8594; map &#8594; materials</strong> to map materials to the alternate names.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/material-mapping.png" alt="Edit material" width="550">
+</div>
+</div>
+<div class="paragraph">
+<p>The various mapping functionalities are described below:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Assign a bend material to the selected material or raw material.</p>
+</li>
+<li>
+<p>Edit the alternate name (aliases) of a material.</p>
+</li>
+<li>
+<p>Edit the alternate names of raw materials.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_bend_material">Bend-material</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The materials in JFY+ and Flux might not always match directly, and you need to map the materials correctly for the tooling process in the Flux Engine. JFY+ assigns the mapped bend material to the part before sending it to the Flux Engine for bend/cut CAM. The bend material combo displayed in this UI displays all materials defined in Flux. Here&#8217;s how you can approach this:</p>
+</div>
+<div class="paragraph">
+<p><strong>Material &#8594; Bend-material mapping</strong></p>
+</div>
+<div class="paragraph">
+<p>The material assigned in JFY+ should be selected first. You&#8217;ll need to identify the material being used for the part from the options on the left. This represents the material as defined in JFY+. The combo box on the right displays all available materials defined in Flux. You must select a material from this list that is appropriate for the material assigned in JFY+.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/edit-material.png" alt="Edit Material">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Aluminum</strong> (which is the material defined in JFY+) is mapped to <strong>AlMg3</strong> (which is the material defined in Flux).</p>
+</li>
+<li>
+<p>When the part is prepared for tooling, the <strong>AlMg3</strong> material is what will actually be used by the Flux Engine during the tooling operation.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/material-bendmtl.png" alt="Edit Material">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Raw-material &#8594; Bend-material mapping</strong></p>
+</div>
+<div class="paragraph">
+<p>JFY+ material mapping can now assign <strong>bend materials</strong> directly to <strong>raw-materials</strong>. By default, a raw material (which is a combination of material and thickness) will inherit the bend material from the parent material type, but you also have the flexibility to override this inherited bend material for specific thickness(es).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/edit-rawmaterial.png" alt="Edit Material" width="550">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>When a <strong>raw-material</strong> (material + thickness) is defined, it will inherit the <strong>bend material</strong> from the parent material type.</p>
+</li>
+<li>
+<p>This mapping will overrride the <strong>bend material</strong> for a specific <strong>raw-material</strong>. Assign the material inherited bend-material to reset.</p>
+</li>
+<li>
+<p><strong>Aluminum-25</strong> (which is the raw-material defined in JFY+) is mapped to <strong>1.4301</strong> (which is the material defined in flux).</p>
+</li>
+<li>
+<p>The part which uses this raw material will use this assigned bend material and not the material level mapping during the Flux engine tooling operation.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/rawmaterial-bendmtl.png" alt="Edit Material">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_material_aliases">Material Aliases</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="img/already-mapped.png" alt="Already Mapped">
+</div>
+</div>
+<div class="paragraph">
+<p>Enter an alias name of the material, one-per-line, in the Aliases textbox. When importing new parts, these aliases are used to map the external material names like
+ERP, CAD systems etc. to the one defined in JFY+. This is a many-to-one map where multiple aliases can be assigned to a single JFY+ material. While an alias name must be used just once. The UI enforces this rule if the alias is used again for some other material.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_raw_material_aliases">Raw Material Aliases</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Like material-aliases, the raw-material aliases allow to provide alternate names for material + thicknesses. These short names later can be used in a spreadsheet to provide a single entry for both material + thickness. For instance, In the image above alias GALV#13 for the raw material QStE380TM-15 is used in spreadsheet below to assign the part-material:</p>
+</div>
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">PartName</th>
+<th class="tableblock halign-left valign-top">Quantity</th>
+<th class="tableblock halign-left valign-top">DueDate</th>
+<th class="tableblock halign-left valign-top">Priority</th>
+<th class="tableblock halign-left valign-top">Material</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">00.13</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">08/21/2016</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Normal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GALV#13</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">00.14</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">13</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">08/21/2016</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Normal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GALV#13</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">00.16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">08/21/2016</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Normal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GALV#13</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The imported part is assigned with the target raw material and the alias is displayed as the Drawing material part field. This part-field is used to capture the material/raw material alias which was used to resolve the actual material or raw material of the part. As displayed in the right below - the bend material is assigned to part bending solution.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/flux-material.png" alt="Flux Material">
+</div>
+</div>
+<div class="paragraph">
+<p>The <strong>Export…</strong> and <strong>Import…</strong> commands can be used to assign mappings in batch. The exported file is a simple key-value CSV file. The section below describes the key-value schema with examples.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+There is no header row in the exported CSV.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><strong>Bend Material (Material/Raw-material, Bend-material)</strong></p>
+</div>
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Aluminum</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AlMg3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Aluminum-10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Almg3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Aluminum-25</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.4301</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Aluminum-20</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Almg3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">QStE380TM</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.8900</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Stainless</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.4301</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Material alias (Alias, Material)</strong></p>
+</div>
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AlMg3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Aluminium</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3.3535</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Aluminium</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Al</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Aluminium</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Raw Material alias (Alias, Raw Material)</strong></p>
+</div>
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ALUM#10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Aluminium-05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AL07</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Aluminium-07</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Al07X</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Aluminium-07</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+  <h3>Contents</h3>
+  <ul>
+    <li level="1">
+      <a href="#_bend_material">Bend-material</a>
+    </li>
+    <li level="1">
+      <a href="#_material_aliases">Material Aliases</a>
+    </li>
+    <li level="1">
+      <a href="#_raw_material_aliases">Raw Material Aliases</a>
+    </li>
+  </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+  <span class="prev"><a href="material mapping.html">Material Mapping</a></span>
+  <span class="next"><a href="update metacam laser database.html">Update MetaCAM Laser Database</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2025 by Jiangsu Jinfangyuan CNC Machine Co.. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../res/index.js"></script>
+    <script src="../res/files.js"></script>
+    <script src="../res/site.js"></script>
+
+    
+</body>
+</html>
